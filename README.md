@@ -129,5 +129,5 @@ Jika sistem ini membantu Anda dan ingin mendukung pengembangannya, Anda dapat me
 Sistem ini bersifat Open-Source di bawah lisensi **MIT license**.
 
 <p align="center">
-Built with ❤️ for <strong>UNMARIS Academic Excellence</strong>
+Built with ❤️ for <strong>Nanu Academic Excellence</strong>
 </p>
