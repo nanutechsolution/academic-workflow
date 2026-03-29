@@ -58,71 +58,76 @@ Ikuti langkah-langkah berikut untuk menjalankan project di lingkungan lokal:
 ```bash
 git clone [https://github.com/username/unmaris-academic-management.git](https://github.com/username/unmaris-academic-management.git)
 cd unmaris-academic-management
-````
+```
 
 **2. Instalasi Dependensi**
-
 ```bash
 composer install
 npm install && npm run build
 ```
 
 **3. Konfigurasi Environment**
-
 ```bash
 cp .env.example .env
 php artisan key:generate
 ```
-
 > **Catatan**: Pastikan Anda telah membuat database dan menyesuaikan konfigurasi `DB_DATABASE`, `DB_USERNAME`, dan `DB_PASSWORD` di file `.env`.
 
 **4. Migrasi Database & Seeder**
-
 ```bash
 php artisan migrate --seed
 ```
 
 **5. Link Storage**
-
 ```bash
 php artisan storage:link
 ```
 
 **6. Jalankan Aplikasi**
-
 ```bash
 php artisan serve
 ```
-
 Akses panel admin di: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
------
+---
 
 ### 📂 Struktur Folder Utama
+- `app/Filament/Resources/` : Tempat logika menu dan CRUD (Akreditasi, Dokumen, dll).
+- `app/Models/` : Definisi tabel dan relasi antar data.
+- `database/migrations/` : Struktur tabel database untuk akreditasi dan administrasi.
+- `storage/app/public/` : Tempat penyimpanan file dokumen bukti (eviden) dan surat.
 
-  * `app/Filament/Resources/` : Tempat logika menu dan CRUD (Akreditasi, Dokumen, dll).
-  * `app/Models/` : Definisi tabel dan relasi antar data.
-  * `database/migrations/` : Struktur tabel database untuk akreditasi dan administrasi.
-  * `storage/app/public/` : Tempat penyimpanan file dokumen bukti (eviden) dan surat.
+---
 
------
+### ☕ Dukungan & Donasi
+Jika sistem ini membantu Anda dan ingin mendukung pengembangannya, Anda dapat memberikan apresiasi melalui:
 
-### 🛡️ Kontribusi
+- **DANA**: `082247459503`
 
-Jika Anda ingin berkontribusi dalam pengembangan sistem UNMARIS:
+Setiap kontribusi sangat berarti untuk keberlanjutan pengembangan fitur-fitur baru.
 
-1.  **Fork** repositori ini.
-2.  Buat **branch** fitur baru (`git checkout -b feature/NamaFitur`).
-3.  **Commit** perubahan Anda (`git commit -m 'Menambah fitur X'`).
-4.  **Push** ke branch tersebut (`git push origin feature/NamaFitur`).
-5.  Buat **Pull Request**.
+---
+### 🛡️ Kontak, Kontribusi & Donasi
+Jika Anda ingin berkontribusi atau memiliki pertanyaan mengenai sistem ini, silakan hubungi pengembang melalui:
 
------
+- **WhatsApp**: [082247459503](https://wa.me/6287750124895)
+- **Kontribusi**:
+    1. Fork repositori ini.
+    2. Buat branch fitur baru (`git checkout -b feature/NamaFitur`).
+    3. Commit perubahan Anda (`git commit -m 'Menambah fitur X'`).
+    4. Push ke branch tersebut.
+    5. Buat Pull Request.
+
+- **Dukungan / Donasi**:  
+Jika sistem ini membantu Anda dan ingin mendukung pengembangannya, Anda dapat memberikan apresiasi melalui **Saweria**:  
+
+[![Dukung Saya di Saweria](https://img.shields.io/badge/Dukung-Saweria-orange?style=flat-square)](https://saweria.co/nanutechsolution)  
+
+> Setiap kontribusi sangat berarti untuk keberlanjutan pengembangan fitur-fitur baru.
 
 ### 📄 Lisensi
-
 Sistem ini bersifat Open-Source di bawah lisensi **MIT license**.
 
-\<p align="center"\>
-Built with ❤️ for \<strong\>UNMARIS Academic Excellence\</strong\>
-\</p\>
+<p align="center">
+Built with ❤️ for <strong>UNMARIS Academic Excellence</strong>
+</p>
